@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "utf-8">
+    <title>Mean</title>
+    <meta name="description" content="Implementation of the statistical concept mean in Python, R and Javascript">
+        
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../notebook.css">
+
+    <script src="chess.js"></script> <!-- insert js file here -->
+  </head>
+    
+  <body>
+    <header role="banner">
+      <h1>Mean</h1>
+      <nav role="navigation"><!-- insert main navigation of the page here--></nav>      
+    </header>
+        
+    <main role="main">
+      <section>
+        <article>
+          <header>
+            <h2>Python</h2>
+          </header>
+          <pre><code class="prettyprint">
+                    
+a = 1,2,3,4,5,6,7,8,9,10
+#input for the calculations
+
+def mean(x):
+#defines a function that accepts one parameter
+	
+	sum = 0
+	for i in x:
+		sum = sum + i  
+	#calculates the sum of the elements from x 
+	
+	lenght = len(x)
+	
+	mean = float(sum/lenght)
+	#the mean is calculated as the sum of the values divided by the number of values
+	
+	return mean
+
+print mean(a)
+                    
+          </code></pre>                
+        </article>
+                
+        <article>
+          <header>
+            <h2>R</h2>
+          </header>
+          <pre><code class="prettyprint">
+                            
+numbers &lt;- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)  
+#stores the values in the variable numbers
+
+mean &lt;- mean(numbers)
+# stores the mean in a variable
+
+print(mean)
+                     
+          </code></pre>                
+        </article>
+                
+        <article>
+          <header>
+            <h2>Javascript</h2>
+          </header>
+          <pre><code class="prettyprint">
+                            
+function mean(numbersForMean){
+  var length = numbersForMean.length;
+  var sum = 0;
+
+  for (var i = 0; i&lt;length; i++){
+    sum += numbersForMean[i];
+  }
+  return (sum/length);
+}                    
+          </code></pre>                
+        </article>
+      </section>
+    </main>
+  
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  </body>
+  
+</html>

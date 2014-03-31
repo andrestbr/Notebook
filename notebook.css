@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------------------
+     General Styles
+------------------------------------------------------------------------------*/
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+  font-size: 12px;
+  margin: 8px;
+}
+
+h1 { 
+  font-size:2.2em; 
+}
+
+h2 { 
+  font-size:1.4em; 
+}
+
+/* end */
+
+/*------------------------------------------------------------------------------
+     Pre/Code Styles
+------------------------------------------------------------------------------*/
+
+code, pre {
+  font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', Monaco, monospace;
+  display: block; padding: 0.5em;
+}
+
+pre {	
+  margin-top: 0;
+  max-width: 95%;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}
+
+code {
+  background-color: #F8F8F8;
+}
+
+/* end */
