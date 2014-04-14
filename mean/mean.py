@@ -1,8 +1,8 @@
-a = 1,2,3,4,5,6,7,8,9,10, 11
+a = 1,2,3,4,5,6,7,8,9,10
 #input for the calculations
 
 def mean(x):
-#defines a function that accepts one parameter
+#defines a function that accepts one vector as parameter
 	
 	sum = 0
 	for i in x:

@@ -14,65 +14,60 @@
   </head>
     
   <body>
-    <header role="banner">
+    <header role="banner" class="grid12">
       <h1>Mean</h1>
       <nav role="navigation"><!-- insert main navigation of the page here--></nav>      
     </header>
         
     <main role="main">
       <section>
-        <article>
+        <article class="grid9">
           <header>
             <h2>Python</h2>
           </header>
-          <pre><code class="prettyprint">
-                    
+          <pre><code class="prettyprint">                    
 a = 1,2,3,4,5,6,7,8,9,10
 #input for the calculations
 
 def mean(x):
 #defines a function that accepts one parameter
 	
-	sum = 0
-	for i in x:
-		sum = sum + i  
-	#calculates the sum of the elements from x 
+    sum = 0
+    for i in x:
+      sum = sum + i  
+    #calculates the sum of the elements from x 
 	
-	lenght = len(x)
+    lenght = len(x)
 	
-	mean = float(sum/lenght)
-	#the mean is calculated as the sum of the values divided by the number of values
+    mean = float(sum/lenght)
+    #the mean is calculated as the sum of the values divided by the number of values
 	
-	return mean
+    return mean
 
-print mean(a)
-                    
+print mean(a)                    
           </code></pre>                
         </article>
                 
-        <article>
+        <article class="grid9">
           <header>
             <h2>R</h2>
           </header>
-          <pre><code class="prettyprint">
-                            
+          <pre><code class="prettyprint">                            
 numbers &lt;- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)  
 #stores the values in the variable numbers
 
 mean &lt;- mean(numbers)
 # stores the mean in a variable
 
-print(mean)
-                     
+print(mean)                
           </code></pre>                
         </article>
                 
-        <article>
+        <article class="grid9">
           <header>
             <h2>Javascript</h2>
           </header>
-          <pre><code class="prettyprint">
-                            
+          <pre><code class="prettyprint">                         
 function mean(numbersForMean){
   var length = numbersForMean.length;
   var sum = 0;
